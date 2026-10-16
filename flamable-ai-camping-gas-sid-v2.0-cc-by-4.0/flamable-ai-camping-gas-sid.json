@@ -1,0 +1,2896 @@
+{
+  "sidName": "FLAMABLE AI CAMPING GAS SID",
+  "engineVersion": "2.0.0",
+  "chipModel": "MOS 6581 / 8580 Hybrid Wavetable + Song Arranger",
+  "author": "River Lyle Reuveni (imortalimp.nl) & Arena.ai Agent",
+  "creators": [
+    {
+      "name": "River Lyle Reuveni (Imortalimp)",
+      "url": "https://imortalimp.nl",
+      "role": "Creator, Producer & Direction"
+    },
+    {
+      "name": "Arena.ai Agent (Arena.ai Agent Mode)",
+      "url": "https://arena.ai",
+      "role": "Co-Creator, Web Audio SID Engine & UI Architecture"
+    }
+  ],
+  "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attributionText": "\"FLAMABLE AI CAMPING GAS SID\" v2.0 by River Lyle Reuveni (https://imortalimp.nl) & Arena.ai Agent (https://arena.ai), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+  "defaultBpm": 132,
+  "defaultStepCount": 32,
+  "scales": {
+    "minor_pentatonic": {
+      "name": "C64 Minor Pentatonic",
+      "intervals": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    "aeolian": {
+      "name": "Natural Minor (Aeolian)",
+      "intervals": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10
+      ]
+    },
+    "harmonic_minor": {
+      "name": "Harmonic Minor (Hubbard)",
+      "intervals": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        11
+      ]
+    },
+    "melodic_minor": {
+      "name": "Melodic Minor (Demoscene)",
+      "intervals": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    "dorian": {
+      "name": "Dorian CyberChip (#lukhash)",
+      "intervals": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9,
+        10
+      ]
+    },
+    "phrygian": {
+      "name": "Phrygian Demoscene",
+      "intervals": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        8,
+        10
+      ]
+    },
+    "phrygian_dominant": {
+      "name": "Phrygian Dominant (Hijaz Boss)",
+      "intervals": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        10
+      ]
+    },
+    "lydian": {
+      "name": "Lydian Dreamchip (Sci-Fi +4#)",
+      "intervals": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        9,
+        11
+      ]
+    },
+    "mixolydian": {
+      "name": "Mixolydian Action Funk",
+      "intervals": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        10
+      ]
+    },
+    "major_arcade": {
+      "name": "Coin-Op Major Arcade (Ionian)",
+      "intervals": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    "major_pentatonic": {
+      "name": "Bright 8-Bit Major Pentatonic",
+      "intervals": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ]
+    },
+    "blues_sid": {
+      "name": "SID Hex-Blues",
+      "intervals": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        10
+      ]
+    },
+    "hungarian_minor": {
+      "name": "Hungarian Gypsy Minor (Boss)",
+      "intervals": [
+        0,
+        2,
+        3,
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    "hirajoshi": {
+      "name": "Hirajoshi Cyber-Ninja (5-Note)",
+      "intervals": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    "in_sen": {
+      "name": "In-Sen Dark Shrine (Japanese)",
+      "intervals": [
+        0,
+        1,
+        5,
+        7,
+        10
+      ]
+    },
+    "whole_tone": {
+      "name": "Whole-Tone Warp Tunnel",
+      "intervals": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ]
+    }
+  },
+  "arpModes": {
+    "none": {
+      "name": "Off (Single Note)",
+      "offsets": [
+        0
+      ]
+    },
+    "min": {
+      "name": "Minor Triad (0-3-7)",
+      "offsets": [
+        0,
+        3,
+        7
+      ]
+    },
+    "maj": {
+      "name": "Major Triad (0-4-7)",
+      "offsets": [
+        0,
+        4,
+        7
+      ]
+    },
+    "oct": {
+      "name": "Octave Jump (0-12)",
+      "offsets": [
+        0,
+        12
+      ]
+    },
+    "pwr": {
+      "name": "Power Fifth (0-7-12)",
+      "offsets": [
+        0,
+        7,
+        12
+      ]
+    },
+    "sus4": {
+      "name": "Suspended 4th (0-5-7)",
+      "offsets": [
+        0,
+        5,
+        7
+      ]
+    },
+    "hubbard": {
+      "name": "Hubbard 50Hz (0-3-7-12)",
+      "offsets": [
+        0,
+        3,
+        7,
+        12
+      ]
+    },
+    "lukhash": {
+      "name": "CyberChip Wide (0-7-10-15)",
+      "offsets": [
+        0,
+        7,
+        10,
+        15
+      ]
+    },
+    "maj7": {
+      "name": "Major 7th [0,4,7,11]",
+      "offsets": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    "min7": {
+      "name": "Minor 7th [0,3,7,10]",
+      "offsets": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    "dim": {
+      "name": "Diminished [0,3,6,9]",
+      "offsets": [
+        0,
+        3,
+        6,
+        9
+      ]
+    },
+    "oct2": {
+      "name": "Dual Octave [0,12,24,12]",
+      "offsets": [
+        0,
+        12,
+        24,
+        12
+      ]
+    }
+  },
+  "wavetableInstruments": [
+    {
+      "id": "sq_classic",
+      "name": "01 · Square 50% (Classic SID Lead)",
+      "family": "square",
+      "squareMix": 1.0,
+      "triangleMix": 0.0,
+      "sineMix": 0.0,
+      "pulseWidth": 0.5,
+      "drive": 0.15,
+      "attack": 0.006,
+      "decay": 0.18,
+      "sustain": 0.65,
+      "release": 0.12,
+      "filterType": "lowpass",
+      "cutoff": 4200,
+      "resonance": 3.5,
+      "arp": "none",
+      "vibratoDepth": 0.15
+    },
+    {
+      "id": "sq_pwm_hubbard",
+      "name": "02 · Square PWM 18% (Hubbard Nasal Lead)",
+      "family": "square",
+      "squareMix": 1.0,
+      "triangleMix": 0.15,
+      "sineMix": 0.0,
+      "pulseWidth": 0.18,
+      "drive": 0.28,
+      "attack": 0.005,
+      "decay": 0.22,
+      "sustain": 0.55,
+      "release": 0.14,
+      "filterType": "bandpass",
+      "cutoff": 2600,
+      "resonance": 5.2,
+      "arp": "none",
+      "vibratoDepth": 0.28
+    },
+    {
+      "id": "sq_sub_bass",
+      "name": "03 · Square Sub-Octave (Butane Bass)",
+      "family": "square",
+      "squareMix": 0.9,
+      "triangleMix": 0.3,
+      "sineMix": 0.35,
+      "pulseWidth": 0.35,
+      "drive": 0.35,
+      "attack": 0.004,
+      "decay": 0.14,
+      "sustain": 0.45,
+      "release": 0.08,
+      "filterType": "lowpass",
+      "cutoff": 1450,
+      "resonance": 6.0,
+      "arp": "none",
+      "vibratoDepth": 0.0
+    },
+    {
+      "id": "sq_arp_chord",
+      "name": "04 · Square 50Hz Arpeggio (C64 Chords)",
+      "family": "square",
+      "squareMix": 0.95,
+      "triangleMix": 0.25,
+      "sineMix": 0.0,
+      "pulseWidth": 0.28,
+      "drive": 0.2,
+      "attack": 0.004,
+      "decay": 0.2,
+      "sustain": 0.6,
+      "release": 0.1,
+      "filterType": "lowpass",
+      "cutoff": 5200,
+      "resonance": 2.8,
+      "arp": "hubbard",
+      "vibratoDepth": 0.08
+    },
+    {
+      "id": "tri_pure",
+      "name": "05 · Triangle 6581 (Warm Flute / Sub)",
+      "family": "triangle",
+      "squareMix": 0.0,
+      "triangleMix": 1.0,
+      "sineMix": 0.2,
+      "pulseWidth": 0.5,
+      "drive": 0.08,
+      "attack": 0.01,
+      "decay": 0.25,
+      "sustain": 0.75,
+      "release": 0.18,
+      "filterType": "lowpass",
+      "cutoff": 3800,
+      "resonance": 1.8,
+      "arp": "none",
+      "vibratoDepth": 0.18
+    },
+    {
+      "id": "tri_folded",
+      "name": "06 · Wavefolded Triangle (Propane Pluck)",
+      "family": "triangle",
+      "squareMix": 0.2,
+      "triangleMix": 1.0,
+      "sineMix": 0.15,
+      "pulseWidth": 0.4,
+      "drive": 0.62,
+      "attack": 0.004,
+      "decay": 0.16,
+      "sustain": 0.35,
+      "release": 0.11,
+      "filterType": "lowpass",
+      "cutoff": 3400,
+      "resonance": 4.8,
+      "arp": "none",
+      "vibratoDepth": 0.1
+    },
+    {
+      "id": "tri_shark",
+      "name": "07 · Sharktooth Triangle-Square Hybrid",
+      "family": "triangle",
+      "squareMix": 0.45,
+      "triangleMix": 0.95,
+      "sineMix": 0.0,
+      "pulseWidth": 0.25,
+      "drive": 0.4,
+      "attack": 0.005,
+      "decay": 0.19,
+      "sustain": 0.5,
+      "release": 0.12,
+      "filterType": "lowpass",
+      "cutoff": 4600,
+      "resonance": 4.2,
+      "arp": "pwr",
+      "vibratoDepth": 0.12
+    },
+    {
+      "id": "tri_ringmod",
+      "name": "08 · Ring-Mod Triangle Bell (SID Metallic)",
+      "family": "triangle",
+      "squareMix": 0.15,
+      "triangleMix": 1.0,
+      "sineMix": 0.4,
+      "pulseWidth": 0.5,
+      "drive": 0.75,
+      "attack": 0.003,
+      "decay": 0.28,
+      "sustain": 0.25,
+      "release": 0.22,
+      "filterType": "highpass",
+      "cutoff": 650,
+      "resonance": 3.5,
+      "arp": "oct",
+      "vibratoDepth": 0.2
+    },
+    {
+      "id": "sin_pure",
+      "name": "09 · Sine 8580 (Pure Sub-Harmonic)",
+      "family": "sine",
+      "squareMix": 0.0,
+      "triangleMix": 0.1,
+      "sineMix": 1.0,
+      "pulseWidth": 0.5,
+      "drive": 0.05,
+      "attack": 0.012,
+      "decay": 0.22,
+      "sustain": 0.8,
+      "release": 0.2,
+      "filterType": "lowpass",
+      "cutoff": 3000,
+      "resonance": 1.4,
+      "arp": "none",
+      "vibratoDepth": 0.12
+    },
+    {
+      "id": "sin_fm_bell",
+      "name": "10 · Sine FM Glass Bell (Arcade Chime)",
+      "family": "sine",
+      "squareMix": 0.1,
+      "triangleMix": 0.25,
+      "sineMix": 1.0,
+      "pulseWidth": 0.5,
+      "drive": 0.48,
+      "attack": 0.003,
+      "decay": 0.32,
+      "sustain": 0.3,
+      "release": 0.24,
+      "filterType": "lowpass",
+      "cutoff": 6400,
+      "resonance": 2.6,
+      "arp": "maj",
+      "vibratoDepth": 0.16
+    },
+    {
+      "id": "sin_cyberchip",
+      "name": "11 · CyberChip Overdriven Sine (#lukhash)",
+      "family": "sine",
+      "squareMix": 0.35,
+      "triangleMix": 0.3,
+      "sineMix": 1.0,
+      "pulseWidth": 0.32,
+      "drive": 0.68,
+      "attack": 0.004,
+      "decay": 0.15,
+      "sustain": 0.55,
+      "release": 0.1,
+      "filterType": "lowpass",
+      "cutoff": 2900,
+      "resonance": 5.8,
+      "arp": "none",
+      "vibratoDepth": 0.14
+    },
+    {
+      "id": "perc_sid_noise",
+      "name": "12 · SID Noise+Sine Drum Matrix (Kick/Snare/Hat)",
+      "family": "sine",
+      "squareMix": 0.4,
+      "triangleMix": 0.4,
+      "sineMix": 0.9,
+      "pulseWidth": 0.5,
+      "drive": 0.5,
+      "attack": 0.001,
+      "decay": 0.11,
+      "sustain": 0.05,
+      "release": 0.06,
+      "filterType": "lowpass",
+      "cutoff": 5500,
+      "resonance": 2.2,
+      "arp": "none",
+      "vibratoDepth": 0.0
+    }
+  ],
+  "presets": [
+    {
+      "id": "butane_hubbard_overdrive",
+      "title": "Butane Hubbard Overdrive (C64 Lead + 50Hz Arp)",
+      "bpm": 132,
+      "root": "C",
+      "scale": "harmonic_minor",
+      "pattern": [
+        [
+          {
+            "note": "C-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "D#4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G#4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "F-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "D#4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "D-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-3",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "C-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "D#4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "C-5",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "B-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "D-4",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "===",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "sq_pwm_hubbard",
+            "arp": "none",
+            "vel": 0.9
+          }
+        ],
+        [
+          {
+            "note": "C-4",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "C-4",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "G#3",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "G-3",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "C-4",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "F-4",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "G-3",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          },
+          {
+            "note": "---",
+            "inst": "sq_arp_chord",
+            "arp": "hubbard",
+            "vel": 0.78
+          }
+        ],
+        [
+          {
+            "note": "C-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "C-3",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "C-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "C-3",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G#1",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G#2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-1",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "C-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "C-3",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "F-1",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "F-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-1",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "---",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-1",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "D-2",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          },
+          {
+            "note": "G-1",
+            "inst": "sq_sub_bass",
+            "arp": "none",
+            "vel": 0.92
+          }
+        ],
+        [
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.85
+          }
+        ]
+      ]
+    },
+    {
+      "id": "lukhash_cyber_stove",
+      "title": "CyberChip Stove Igniter (#lukhash Synthwave SID)",
+      "bpm": 126,
+      "root": "A",
+      "scale": "natural_minor",
+      "pattern": [
+        [
+          {
+            "note": "A-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "E-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "A-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-5",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "B-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "G-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "E-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "A-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-5",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "E-5",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-5",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-5",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "B-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "A-4",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "===",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "sq_classic",
+            "arp": "none",
+            "vel": 0.88
+          }
+        ],
+        [
+          {
+            "note": "A-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "A-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "E-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "E-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "G-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "G-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "E-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "E-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "F-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "F-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "C-4",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "C-4",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "D-4",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "E-4",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "A-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "A-3",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          },
+          {
+            "note": "---",
+            "inst": "tri_shark",
+            "arp": "min",
+            "vel": 0.76
+          }
+        ],
+        [
+          {
+            "note": "A-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "E-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "E-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "E-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "A-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "F-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "E-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "E-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "G-1",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          },
+          {
+            "note": "E-2",
+            "inst": "sin_cyberchip",
+            "arp": "none",
+            "vel": 0.95
+          }
+        ],
+        [
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.88
+          }
+        ]
+      ]
+    },
+    {
+      "id": "midnight_tent_lantern",
+      "title": "Midnight Tent Lantern (Triangle + Sine Bell SID)",
+      "bpm": 108,
+      "root": "E",
+      "scale": "dorian",
+      "pattern": [
+        [
+          {
+            "note": "E-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "G-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "B-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-5",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "B-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "G-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "E-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "C-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "E-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "G-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "F#4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "D-4",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "B-3",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "===",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          },
+          {
+            "note": "---",
+            "inst": "tri_folded",
+            "arp": "none",
+            "vel": 0.85
+          }
+        ],
+        [
+          {
+            "note": "E-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "B-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "G-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "E-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "C-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "G-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "D-3",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "B-2",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          },
+          {
+            "note": "---",
+            "inst": "sin_fm_bell",
+            "arp": "sus4",
+            "vel": 0.72
+          }
+        ],
+        [
+          {
+            "note": "E-2",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "E-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "B-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "C-2",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "C-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "G-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "D-2",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "B-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "B-1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "F#1",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          },
+          {
+            "note": "---",
+            "inst": "tri_pure",
+            "arp": "none",
+            "vel": 0.9
+          }
+        ],
+        [
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "F#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "C-2",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "D-3",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "A#4",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          },
+          {
+            "note": "---",
+            "inst": "perc_sid_noise",
+            "arp": "none",
+            "vel": 0.7
+          }
+        ]
+      ]
+    }
+  ],
+  "version": "2.4.0"
+}

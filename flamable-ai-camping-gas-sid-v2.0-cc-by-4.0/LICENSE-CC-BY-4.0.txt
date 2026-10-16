@@ -1,0 +1,90 @@
+==============================================================================
+  "FLAMABLE AI CAMPING GAS SID" (v2.3)
+  C64 Wavetable Synth, 4-Voice Tracker, Programmable Song Arranger,
+  Quick Tunes + Wavetable Instrument Confluence Workstation &
+  One-Click 2–6 Minute Full Varied Song Generator
+==============================================================================
+
+CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL (CC BY 4.0)
+------------------------------------------------------------------------------
+Work Title:
+  "FLAMABLE AI CAMPING GAS SID" (v2.3)
+
+Co-Creators & Attribution:
+  - River Lyle Reuveni (Imortalimp) — https://imortalimp.nl
+  - Arena.ai Agent (Arena.ai Agent Mode) — https://arena.ai
+
+Copyright & Rights Notice:
+  © 2026 River Lyle Reuveni (https://imortalimp.nl) & Arena.ai Agent (https://arena.ai).
+  Some Rights Reserved under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+License Summary:
+  This work — including the HTML studio interface, JavaScript Web Audio MOS
+  6581/8580 wavetable SID synthesizer, Quick Tunes + Wavetable Instrument
+  Confluence engine, 4-row (Z–, & Q–I + 1–0 / A–L) Violet-Armed live play-in
+  keyboard, Violet-Armed "Set Synth on Active Voice" multi-pattern lock,
+  Programmable Song Arranger, One-Click 2–6 Minute Procedural Song Generator,
+  Direct-DSP 44.1 kHz Stereo .WAV / .MID / .JSON exporters, JSON wavetable
+  instrument/preset bank, documentation (README.md & DESCRIPTION.md), and
+  companion imortalimp.nl integration — is licensed under the Creative Commons
+  Attribution 4.0 International License (CC BY 4.0).
+
+  You are free to:
+    * Share — copy and redistribute the material in any medium or format
+    * Adapt — remix, transform, and build upon the material for any purpose,
+      even commercially
+  Under the following terms:
+    * Attribution — You must give appropriate credit to both River Lyle Reuveni
+      (https://imortalimp.nl) and Arena.ai Agent (https://arena.ai), provide a
+      link to the license (https://creativecommons.org/licenses/by/4.0/), and
+      indicate if changes were made.
+
+  Full License Text:
+    https://creativecommons.org/licenses/by/4.0/
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+Recommended Attribution Line:
+  "FLAMABLE AI CAMPING GAS SID" (v2.3) — Created by River Lyle Reuveni
+  (https://imortalimp.nl) & Arena.ai Agent (https://arena.ai). Licensed under
+  Creative Commons Attribution 4.0 International (CC BY 4.0 —
+  https://creativecommons.org/licenses/by/4.0/).
+
+==============================================================================
+  FILES INCLUDED IN THIS PACKAGE (UPLOAD TO imortalimp.nl ROOT)
+==============================================================================
+  1. flamable-ai-camping-gas-sid.html
+     Main v2.3 web application. Contains external references to the .js and
+     .json files plus embedded inline fallbacks so it runs both online on
+     https://imortalimp.nl/flamable-ai-camping-gas-sid.html and offline.
+
+  2. flamable-ai-camping-gas-sid.js
+     Standalone v2.3 Web Audio MOS 6581/8580 wavetable synth engine (Square PWM,
+     Triangle, Sine, LFSR SID Noise), Quick Tunes + Wavetable Instrument
+     Confluence engine, 4-Row Live Play-In & Overdub Recorder, Violet-Armed
+     Active-Voice Synth Lock, 4-Voice 32-Step Tracker, Programmable Song
+     Arranger, One-Click 2–6 Minute Varied Song Generator, Multi-Slot Browser
+     Save States Manager, and Direct-DSP .WAV, .MID, and .JSON exporters.
+
+  3. flamable-ai-camping-gas-sid.json
+     Companion JSON bank containing 12 Square/Triangle/Sine wavetable synth
+     patches, musical scales, 50 Hz C64 arpeggio tables, signature presets,
+     and CC BY 4.0 attribution metadata.
+
+  4. flamable-ai-camping-gas-sid-source.html
+     Visitable HTML Source Code Browser displaying all project files (.js,
+     .json, .html, README.md, DESCRIPTION.md, LICENSE-CC-BY-4.0.txt) with
+     one-click copy and download.
+
+  5. README.md & DESCRIPTION.md
+     Complete v2.3 usage guide and technical architecture documentation.
+
+  6. LICENSE-CC-BY-4.0.txt
+     This Creative Commons Attribution 4.0 International license & attribution
+     notice crediting River Lyle Reuveni (imortalimp.nl) & Arena.ai Agent.
+
+  7. imortalimp-root/index.html, home.html & i-know-better.html
+     Updated imortalimp.nl homepage with the 90% x 90% top SID v2.3 showcase
+     and the big "I KNOW BETTER" link button (just before <--Zuider Zee Brug-->)
+     opening /i-know-better.html (popout video player for
+     /foobar2000_zu7N7Bp2vz.mp4).
+==============================================================================
